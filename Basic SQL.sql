@@ -41,37 +41,37 @@ insert into course2410540 values ('CS-347','Database System Concepts','Comp. Sci
 insert into course2410540 values ('EE-181','Intro. to Digital Systems','Elec. Eng.',3);
 insert into course2410540 values ('FIN-201','Investment Banking','Finance',3);
 
-#select * from course2410540;
+select * from course2410540;
 # QUERIES:
 #i. Show the names of all instructors
 
-#select name from instructor2410540;
+select name from instructor2410540;
 #ii. Show the course ID and title of all courses.
-#select courseid,title from course2410540;
+select courseid,title from course2410540;
 
 #iii. Find the name and department of the instructor whose ID is 22222.
-#select name,deptname from instructor2410540 where id=222222;
+select name,deptname from instructor2410540 where id=222222;
 
 #iv. Find the titles and credits of courses offered by the 'Comp. Sci.' department.
-#select title,credits from course2410540 where dept_name like 'Comp. Sci.';
+select title,credits from course2410540 where dept_name like 'Comp. Sci.';
 
 #Find the names and departments of instructors who have a salary greater than 70,000
-#select name,deptname from instructor2410540 where salary>70000;
+select name,deptname from instructor2410540 where salary>70000;
 
 #vi. Find the titles of courses that have credits not less than 4
-#select title from course2410540 where credits>=4;
+select title from course2410540 where credits>=4;
 
 #vii. Find the names and departments of instructors who have a salary between 80,000 and 100,000
-#select name,deptname from instructor2410540 where salary>=80000 AND salary<=100000;
+select name,deptname from instructor2410540 where salary>=80000 AND salary<=100000;
 
 #viii. Find the titles and credits of courses not offered by the 'Comp. Sci.' department
-#select title, credits from course2410540 where dept_name NOT LIKE 'Comp. Sci.';
+select title, credits from course2410540 where dept_name NOT LIKE 'Comp. Sci.';
 
 #ix. Display all records from the instructor table.
-#select * from instructor2410540;
+select * from instructor2410540;
 
 #x. Find all courses (show all columns) that are offered by the 'Biology' department and have credits not equal to 4
-#select * from course2410540 where dept_name LIKE 'Biology' AND credits !=4;
+select * from course2410540 where dept_name LIKE 'Biology' AND credits !=4;
 
 #xi. Show unique department names only from the course table.
 select DISTINCT dept_name from course2410540;
