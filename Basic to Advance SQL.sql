@@ -110,3 +110,18 @@ HAVING COUNT(c.course_id) > (
         GROUP BY dept_id
     ) AS dept_course_counts
 );
+
+### Limit and Offset : Limit shows how many tuples to display , Offset sets the starting position
+    (e.g : show data from 2 to 4  : LIMIT 3 OFFSET 1)
+    
+
+# show last 5 students details
+select * from student
+order by student_id desc
+limit 5;
+
+# show details of faculties who are from department 3 to 8 with their dept name
+select * 
+from faculty f
+join department d on f.dept_id=d.dept_id
+limit 6 offset 2;
